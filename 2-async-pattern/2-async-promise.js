@@ -1,14 +1,3 @@
-/*const _ = require('lodash')
-
-const items = [1,[2,[3,[4]]]]
-const newItems = _.flattenDeep(items)
-
-console.log(newItems);
-
-console.log('hello world');
-console.log('hi');
-
-*/
 const {readFile} = require('fs')
 const { reject, result } = require('lodash')
 const { resolve } = require('path')
@@ -31,15 +20,9 @@ const getFile = (path) => {
     }) 
     
 }
-/*
+
 getFile('./content/first.txt')
 .then(result => console.log(result))
 .catch(err => console.log(err))
-*/
 
-const start = async() => {
-    const first = await getFile('./content/first.txt')
-    console.log(first)
-}
 
-start();
